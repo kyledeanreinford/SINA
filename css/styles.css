@@ -59,6 +59,7 @@ blockquote, q {
 	width: 100%;
 	position: fixed;
 	transition: .5s ease;
+	z-index: 1;
 }
 
 h1 {
@@ -85,20 +86,22 @@ h3 {
 
 
 #photoCarousel {
-	/* height: 500px;
-	overflow: hidden; */
+	/* opacity:1;
+	transition: opacity 5s; */
 }
 
 #headlineImage {
 	margin: 20px auto;
 	width: 100%;
-	opacity:1;
-	transition: opacity 5s;
+  opacity: 1;
+  transition: opacity 1s;
+	transition-timing-function: ease-in;
 }
 
-#headlineImage .fadeOut {
-    opacity:0;
+#headlineImage.fadeOut {
+  opacity: 0;
 }
+
 
 #getInvolved {
 }
