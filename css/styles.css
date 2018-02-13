@@ -78,7 +78,7 @@ h3 {
 
 
 #headlineImage {
-	margin: 50px auto;
+	margin: 80px auto 20px;
 	width: 100%;
 	opacity: 1;
 	transition: opacity 1s;
