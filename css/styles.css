@@ -92,6 +92,12 @@ h3 {
 #headlineImage {
 	margin: 20px auto;
 	width: 100%;
+	opacity:1;
+	transition: opacity 5s;
+}
+
+#headlineImage .fadeOut {
+    opacity:0;
 }
 
 #getInvolved {

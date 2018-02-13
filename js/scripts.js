@@ -1,17 +1,26 @@
 
 // Main background images for slideshow
-const imageArray = ["../images/DSC02303.jpg", "../images/DSC02308.jpg", "../images/DSC02312.jpg", "../images/DSC02315.jpg", "../images/DSC02317.jpg", "../images/DSC02322.jpg",
-"../images/DSC02328.jpg" ]
+const imageArray = ["./images/slideshow_images/optimized/SINA_slideshow-01.jpg","./images/slideshow_images/optimized/SINA_slideshow-02.jpg","./images/slideshow_images/optimized/SINA_slideshow-03.jpg","./images/slideshow_images/optimized/SINA_slideshow-04.jpg","./images/slideshow_images/optimized/SINA_slideshow-05.jpg","./images/slideshow_images/optimized/SINA_slideshow-06.jpg" ]
 
 // Slideshow function
-function carousel(array) {
-  for (var i = 0; i < array.length; i += 1) {
-    let headlineImage = document.getElementById('headlineImage');
-    headlineImage.setAttribute("src", array[i]);
 
-    document.body.appendChild(x)
-  }
+
+function carousel() {
+    let index = 0;
+    setInterval(function() {
+    let headlineImage = document.getElementById('headlineImage');
+    headlineImage.className += "fadeOut";
+    headlineImage.src = imageArray[index];
+    headlineImage.className = "";
+    index += 1;
+    if (index === imageArray.length) {
+      index = 0;
+    }
+}, 5000);
 }
+
+
+document.onload = carousel();
 
 // Change header size, opacity on scroll
 document.body.onscroll = function stickyHeader() {
