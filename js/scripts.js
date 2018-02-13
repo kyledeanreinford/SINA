@@ -19,6 +19,7 @@ var index = 0;
 const imgDuration = 7000;
 
 function carousel() {
+    if (screen.availWidth > 920) {
     document.getElementById('headlineImage').className += "fadeOut";
     setTimeout(function() {
         document.getElementById('headlineImage').src = imgArray[index];
@@ -29,6 +30,9 @@ function carousel() {
       index = 0;
     }
     setTimeout(carousel, imgDuration);
+  } else {
+    document.getElementById('headlineImage').src = imgArray[1];
+  }
 }
 
 document.onload = carousel();
