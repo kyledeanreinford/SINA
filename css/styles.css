@@ -45,13 +45,6 @@ blockquote, q {
 	quotes: "" "";
 }
 
-:root {
-	--grey: rgba(76, 84, 84, 1);
-	--orangish: rgba(255, 113, 91, 1);
-	--teal: rgba(59, 206, 172, 1);
-	--green: rgba(35, 206, 107, 1);
-}
-
 .header {
 	background-color: white;
 	text-align: center;
@@ -63,16 +56,16 @@ blockquote, q {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 1.4em;
 	padding: 20px 0 0 0;
 }
 
 .headerOnScroll h1 {
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	text-align: center;
 	margin-top: 20px;
 	line-height: 1.5em;
@@ -80,7 +73,7 @@ h2 {
 
 h3 {
 	font-size: 1.2em;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 
@@ -91,15 +84,15 @@ h3 {
 }
 
 #headlineImage {
-	margin: 20px auto;
+	margin: 30px auto;
 	width: 100%;
-  opacity: 1;
-  transition: opacity 1s;
+	opacity: 1;
+	transition: opacity 1s;
 	transition-timing-function: ease-in;
 }
 
 #headlineImage.fadeOut {
-  opacity: 0;
+	opacity: 0;
 }
 
 
@@ -117,9 +110,9 @@ h3 {
 }
 
 .descriptiveText {
-	width: 60%;
+	width: 90%;
 	font-size: 1.2em;
-	margin: 10px auto;
+	margin: 0 auto;
 	text-align: center;
 	line-height: 1.3em;
 
@@ -140,36 +133,28 @@ a {
 	margin-top: 20px;
 }
 
-.column1 {
-	width: 60%;
-	float: left;
-}
-
-.column2 {
-	width: 40%;
-	float: right;
-}
-
 .nashFlag {
-	width: 90%;
+	width: 100%;
 	overflow: hidden;
 	margin: 20px auto;
 }
 
 .meetings {
 	width: 80%;
-	margin: 10px auto;
+	margin: 0 auto;
 	line-height: 1.5em;
 }
 
 #membership {
-	clear: both;
-	padding-top: 20px;
-	width: 60%;
+	padding-top: 0px;
+	width: 90%;
 	margin: 0 auto;
 	font-size: 1.2em;
 	line-height: 1.3em;
-	/* background-color: var(--orangish); */
+}
+
+#buffer {
+	height: 30px;
 }
 
 .stickyFooter {
@@ -190,4 +175,146 @@ a {
 
 .centered {
 	text-align: center;
+}
+
+@media screen and (min-width: 920px) {
+	.header {
+		background-color: white;
+		text-align: center;
+		height: 100px;
+		width: 100%;
+		position: fixed;
+		transition: .5s ease;
+		z-index: 1;
+	}
+
+	h1 {
+		font-size: 2em;
+		padding: 20px 0 0 0;
+	}
+
+	.headerOnScroll h1 {
+		padding-top: 10px;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		text-align: center;
+		margin-top: 20px;
+		line-height: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+		margin-top: 20px;
+	}
+
+
+
+	#photoCarousel {
+		/* opacity:1;
+		transition: opacity 5s; */
+	}
+
+	#headlineImage {
+		margin: 20px auto;
+		width: 100%;
+	  opacity: 1;
+	  transition: opacity 1s;
+		transition-timing-function: ease-in;
+	}
+
+	#headlineImage.fadeOut {
+	  opacity: 0;
+	}
+
+
+	#getInvolved {
+	}
+
+	.headerOnScroll {
+		position: fixed;
+		width: 100%;
+		transition: .5s ease;
+		height: 50px;
+		overflow: hidden;
+		text-align: center;
+		background-color: rgba(255 ,255, 255, .8)
+	}
+
+	.descriptiveText {
+		width: 60%;
+		font-size: 1.2em;
+		margin: 10px auto;
+		text-align: center;
+		line-height: 1.3em;
+
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		color: inherit;
+		font-size: inherit;
+	}
+
+	.simap {
+		width: 100%;
+	}
+
+	#ourNeighborhood {
+		margin-top: 20px;
+	}
+
+	.column1 {
+		width: 60%;
+		float: left;
+	}
+
+	.column2 {
+		width: 40%;
+		float: right;
+	}
+
+	.nashFlag {
+		width: 90%;
+		overflow: hidden;
+		margin: 20px auto;
+	}
+
+	.meetings {
+		width: 80%;
+		margin: 10px auto;
+		line-height: 1.5em;
+	}
+
+	#membership {
+		clear: both;
+		padding-top: 20px;
+		width: 60%;
+		margin: 0 auto;
+		font-size: 1.2em;
+		line-height: 1.3em;
+		/* background-color: var(--orangish); */
+	}
+
+	.stickyFooter {
+		position: fixed;
+		bottom: 0;
+		height: 40px;
+		padding: 10px;
+		width: 100%;
+		background-color: white;
+		color: black;
+		text-align: center;
+	}
+
+	.footerIcon {
+		width: 32px;
+		padding: 0 20px;
+	}
+
+	.centered {
+		text-align: center;
+	}
 }
