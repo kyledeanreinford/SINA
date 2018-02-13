@@ -1,0 +1,184 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+:root {
+	--grey: rgba(76, 84, 84, 1);
+	--orangish: rgba(255, 113, 91, 1);
+	--teal: rgba(59, 206, 172, 1);
+	--green: rgba(35, 206, 107, 1);
+}
+
+.header {
+	background-color: white;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	transition: .5s ease;
+}
+
+h1 {
+	font-size: 2em;
+	padding: 20px 0 0 0;
+}
+
+.headerOnScroll h1 {
+	padding-top: 10px;
+}
+
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+
+
+
+#photoCarousel {
+	/* height: 500px;
+	overflow: hidden; */
+}
+
+#headlineImage {
+	margin: 20px auto;
+	width: 100%;
+}
+
+#getInvolved {
+}
+
+.headerOnScroll {
+	position: fixed;
+	width: 100%;
+	transition: .5s ease;
+	height: 50px;
+	overflow: hidden;
+	text-align: center;
+	background-color: rgba(255 ,255, 255, .8)
+}
+
+.descriptiveText {
+	width: 60%;
+	font-size: 1.2em;
+	margin: 10px auto;
+	text-align: center;
+	line-height: 1.3em;
+
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+	font-size: inherit;
+}
+
+.simap {
+	width: 100%;
+}
+
+#ourNeighborhood {
+	margin-top: 20px;
+}
+
+.column1 {
+	width: 60%;
+	float: left;
+}
+
+.column2 {
+	width: 40%;
+	float: right;
+}
+
+.nashFlag {
+	width: 90%;
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.meetings {
+	width: 80%;
+	margin: 10px auto;
+	line-height: 1.5em;
+}
+
+#membership {
+	clear: both;
+	padding-top: 20px;
+	width: 60%;
+	margin: 0 auto;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	/* background-color: var(--orangish); */
+}
+
+.stickyFooter {
+	position: fixed;
+	bottom: 0;
+	height: 40px;
+	padding: 10px;
+	width: 100%;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+.footerIcon {
+	width: 32px;
+	padding: 0 20px;
+}
+
+.centered {
+	text-align: center;
+}
